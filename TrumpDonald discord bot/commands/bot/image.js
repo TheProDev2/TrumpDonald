@@ -37,11 +37,6 @@ exports.run = async (client, message, args) => {
       }
 
       message.channel.send(urls[Math.floor(Math.random() * urls.length)]);
-
-      message.channel.startTyping(true);
-      setTimeout(() => {
-        message.channel.stopTyping(true);
-      }, 2000);
     });
   }
 };
