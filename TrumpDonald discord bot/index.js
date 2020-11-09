@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const { prefix, token, official_theprodev } = require("./config.json");
+const { prefix, official_theprodev } = require("./config.json");
 
 // Plugins
 const fs = require("fs");
@@ -75,4 +75,4 @@ client.elevation = (message) => {
   return permlvl;
 };
 
-client.login(token);
+process.env(token);
