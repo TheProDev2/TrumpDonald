@@ -5,6 +5,8 @@ const cheerio = require("cheerio");
 exports.run = async (client, message, args) => {
   if (!args[0])
     return message.reply("You need to specify what image that you search");
+  if (args[0] === message.mentions.users.first())
+    return message.reply("You can't search @mentions!");
 
   let result = args[0];
 
