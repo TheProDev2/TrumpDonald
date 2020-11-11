@@ -46,7 +46,7 @@ exports.run = async (client, message, args) => {
 
 exports.conf = {
   aliases: ["i"],
-  permlvl: 0,
+  permlvl: 1,
 };
 
 exports.help = {

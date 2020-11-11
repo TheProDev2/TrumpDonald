@@ -49,7 +49,7 @@ exports.run = async (client, message, args) => {
 
 exports.conf = {
   aliases: ["cal"],
-  permlvl: 0,
+  permlvl: 1,
 };
 
 exports.help = {

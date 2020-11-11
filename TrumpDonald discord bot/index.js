@@ -70,7 +70,7 @@ client.elevation = (message) => {
 
   let permlvl = 0;
 
-  if (message.member.hasPermission("SEND_MESSAGE")) permlvl = 0;
+  if (message.member.hasPermission("SEND_MESSAGE")) permlvl = 1;
   if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
   if (message.member.hasPermission("ADMINISTATOR")) permlvl = 3;
   if (message.author.id === official_theprodev) permlvl = 4;
