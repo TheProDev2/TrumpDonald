@@ -40,6 +40,8 @@ fs.readdirSync(`./commands`).forEach((dir) => {
 client.on("message", (message) => {
   let client = message.client;
 
+  client.user.setActivity("d!help", { type: "PLAYING" }).catch(console.error());
+
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
