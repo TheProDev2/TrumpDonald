@@ -22,6 +22,7 @@ exports.run = async (client, message, args) => {
 
     request(options, function (error, response, responseBody) {
       if (error) {
+        message.channel.send(error);
         return;
       }
 
